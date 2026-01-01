@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Scenario, Choice } from '../types';
-import { CheckCircle, XCircle, AlertCircle, Lightbulb } from 'lucide-react';
+import { CheckCircle, XCircle, Lightbulb } from 'lucide-react';
 
 interface ScenarioCardProps {
   scenario: Scenario;
