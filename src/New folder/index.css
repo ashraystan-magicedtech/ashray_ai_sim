@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors duration-200 shadow-sm hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200 border border-gray-300 shadow-sm;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6 border border-gray-100;
+  }
+  
+  .choice-card {
+    @apply bg-white rounded-lg p-4 border-2 border-gray-200 hover:border-primary-500 hover:shadow-md transition-all duration-200 cursor-pointer;
+  }
+  
+  .choice-card.selected {
+    @apply border-primary-600 bg-primary-50;
+  }
+  
+  .feedback-success {
+    @apply bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg;
+  }
+  
+  .feedback-warning {
+    @apply bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r-lg;
+  }
+  
+  .feedback-error {
+    @apply bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg;
+  }
+}
